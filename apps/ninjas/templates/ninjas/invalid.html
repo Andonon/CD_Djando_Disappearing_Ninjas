@@ -8,14 +8,18 @@
     <link rel="stylesheet" type="text/css" href="{% static 'ninjas/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'ninjas/style.css' %}">
     <link rel="shortcut icon" href="{% static 'ninjas/favicon.ico' %}">
+
 </head>
 <body>
     <div id=wrapper>
-        <h1>There are no ninjas here... </h1><br>
-        <input id="allbutton" onclick="window.location='/ninjas';" class="linkbutton" type="button" value="View Ninjas">
+        <h1>Oh snap! There are no ninjas here... </h1>
+        <p>This is not a valid page URL anyway... </p>
+        <input id="allbutton" onclick="window.location='/ninja';" class="linkbutton" type="button" value="View Ninjas">
+        <h1>Add April Oneil to this page<h1>
     </div>
     <footer>
-        <p>by Troy Center June 2017, Coding Dojo, DJango.</p>
+        <p>by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
     </footer>
 </body>
 </html>
+            <img src="{% static 'ninjas/leonardo.jpg' %}"></img>

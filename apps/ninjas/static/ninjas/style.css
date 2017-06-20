@@ -1,0 +1,71 @@
+/*******************************************************************/
+/* Created: June 8 2017 by Troy Center, troycenter1@gmail.com.     */
+/* CSS for the Flask fundamentals assignment "Dojo Survey"      */
+/*******************************************************************/
+
+/***************************************************/
+/*               CSS reset settings                */
+/***************************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***************************************************/
+/*              Wrapper                            */
+/***************************************************/
+
+#wrapper {
+        background-image: linear-gradient(300deg,orange, white);
+        height: 1800px;
+        width: 1200px;
+        padding: 100px;
+}
+
+.linkbutton {
+    height: 40px; 
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px grey;
+}
+#bluebutton {
+    background-color: blue;
+    color: white;
+}
+#redbutton {
+    background-color: red;
+    color: white;
+}
+#orangebutton {
+    background-color: orange;
+    color: white;
+}
+#purplebutton {
+    background-color: purple;
+    color: white;
+}
+#allbutton {
+    background-color: black;
+    color: white;
+}
+
+
+
+/***************************************************/
+/*       Footer, fine print, my signature          */
+/***************************************************/
+
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: .7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer img {
+    height: 20px;
+    margin: 5px;
+    vertical-align: middle;
+}
