@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Disappearing Ninjas</title>
+    <meta description="Disappearing Ninjas for Coding Dojo Django fundamentals">
+    <meta charset='utf-8' />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ninjas/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ninjas/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'ninjas/favicon.ico' %}">
+</head>
+<body>
+    <div id=wrapper>
+        <h1>{{ tmnt }}</h1>
+        <div id="ninjabuttons">
+            <input id="bluebutton" onclick="window.location='/ninjas/blue';" class="linkbutton" type="button" value="Blue Ninja">
+            <input id="redbutton" onclick="window.location='/ninjas/red';" class="linkbutton" type="button" value="Red Ninja">
+            <input id="orangebutton" onclick="window.location='/ninjas/orange';" class="linkbutton" type="button" value="Orange Ninja">
+            <input id="purplebutton" onclick="window.location='/ninjas/purple';" class="linkbutton" type="button" value="Purple Ninja">
+            <input id="allbutton" onclick="window.location='/ninjas';" class="linkbutton" type="button" value="View All Ninjas">
+        </div>
+        <div id="ninjaimages">
+            <img src="{% get_static_prefix %}ninjas/{{tmnt}}"></img>     
+        </div>            
+    </div>
+    <footer>
+        <p>by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
+    </footer>
+</body>
+</html>

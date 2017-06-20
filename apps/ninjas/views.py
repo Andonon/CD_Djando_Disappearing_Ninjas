@@ -10,18 +10,22 @@ def home(request):
 def ninjas(request):
     '''Render the nindas page, with buttons to select a ninja'''
     return render(request, 'ninjas/ninjas.html')
-def blue(request):
-    '''render the blue ninja, Leonardo'''
-    return render(request, 'ninjas/blue.html')
-def orange(request):
-    '''render the orange ninja, Machelangelo'''
-    return render(request, 'ninjas/orange.html')
-def red(request):
-    '''render the red ninja, Raphael'''
-    return render(request, 'ninjas/red.html')
-def purple(request):
-    '''render the purple ninja, Donatello'''
-    return render(request, 'ninjas/purple.html')
+def show(request, color):
+    '''Render the ninjas page'''
+    if color == "blue":
+        context = {"tmnt": "Leonardo.jpg"}
+        return render(request, 'ninjas/show.html', context)
+    elif color == "orange":
+        context = {"tmnt": "Michelangelo.jpg"}
+        return render(request, 'ninjas/show.html', context)
+    elif color == "purple":
+        context = {"tmnt": "Donatello.jpg"}
+        return render(request, 'ninjas/show.html', context)
+    elif color == "red":
+        context = {"tmnt": "Raphael.jpg"}
+        return render(request, 'ninjas/show.html', context)
+    else:
+        return render(request, 'ninjas/invalid.html')
 def invalid(request):
-    ''' render the invalid page with April Oneil on it'''
     return render(request, 'ninjas/invalid.html')
+    
